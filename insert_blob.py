@@ -4,7 +4,7 @@ def insert_data(first_name, last_name, email, birthdate, age, photo_path):
     try:
         # Connect to the PostgreSQL database
         conn = psycopg2.connect(database="borja_moll", user="postgres",
-                                password="radrax*88", host="localhost", port="5432")
+                                password="postgres", host="localhost", port="5432")
         cur = conn.cursor()
 
         # Read the photo as binary data
